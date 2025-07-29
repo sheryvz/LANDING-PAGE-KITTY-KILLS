@@ -1,0 +1,162 @@
+
+/* 
+
+  ESTILOS PERSONALIZADOS
+
+  Aqui vamos a estilar todas las secciones, sus contenidos y el responsivo.
+
+
+*/
+
+
+@font-face {
+  font-family: 'SFPRODISPLAYBOLD' ;
+  src: url(/assets/fonts/SFPRODISPLAYBOLD.OTF) format(opentype);
+}
+
+@font-face {
+  font-family: 'SFPRODISPLAYMEDIUM' ;
+  src: url(/assets/fonts/SFPRODISPLAYMEDIUM.OTF) format(opentype);
+}
+
+@font-face {
+  font-family: 'SFPRODISPLAYREGULAR' ;
+  src: url(/assets/fonts/SFPRODISPLAYREGULAR.OTF) format(opentype);
+}
+
+
+/* Header */
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-normal);
+}
+
+.navbar-menu {
+  display: flex;
+  gap: var(--space-medium);
+}
+
+.navbar-menu a {
+  font-family: 'SFPRODISPLAYMEDIUM';
+  text-transform: uppercase;
+}
+
+.navbar-menu a:hover {
+  color: var(--purple-color);
+}
+
+/* Hero */
+
+.hero {
+  height: 100vh;
+  min-height: 100px;
+  background-color: var(--white-color); 
+
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+color: var(--dark-color);
+
+}
+
+.hero-content {
+  /* width: 50%; */
+}
+
+.hero-content p {
+  font-size: 1.125rem;
+  margin-bottom: var(--space-small);
+/*   max-width: 80%; */
+text-align: center;
+}
+
+.hero-actions {
+  display: flex;
+  gap: var(--space-small);
+  margin-bottom: var(--space-medium);
+  justify-content: center;
+}
+
+/*
+.hero-icons {
+  display: flex;
+  gap: var(--space-small);
+}
+*/
+
+.hero-text {
+  font-family: 'SFPRODISPLAYREGULAR';
+}
+
+.title-text {
+  font-family: 'SFPRODISPLAYBOLD';
+}
+
+.hero-text-horizontal-gradient {
+  font-family: 'SFPRODISPLAYREGULAR';
+  background: linear-gradient(to right, #007c06, #633500, #06b0ff);
+  -webkit-background-clip: text;
+  color: transparent;  
+}
+
+/* Perspective */
+
+.perspective {
+  background-color: var(--light-color);
+}
+
+.perspective-header {
+  font-family: 'SFPRODISPLAYREGULAR';
+  margin-bottom: 1rem;
+}
+
+.perspective-content {
+  display: flex;
+  align-items: center;
+}
+
+.perspective-thumbnails {
+  width: 50%;
+}
+
+.thumbnail-item {
+  border-radius: 2rem;
+  overflow: hidden;
+  cursor: pointer;
+  filter: brightness(0.6);
+  transition: filter .3s ease;
+}
+
+.thumbnail-item:hover {
+  filter: brightness(1);
+}
+
+.thumbnails-list {
+  display: grid;
+  grid-template-columns: repeat(3 , 1fr);
+  gap: var(--space-medium);
+}
+
+.perspective-showcase {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-medium);
+}
+
+.perspective-info {
+  text-align: center;
+}
