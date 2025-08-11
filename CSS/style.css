@@ -261,43 +261,43 @@ body {
 
  /* About */
 
-.about {
+.coleccionables {
   background:
     /* Capas */
-    /* Layer 1 */ linear-gradient(90deg, rgba(24, 130, 179, 0.7) 0%, rgba(20, 190, 119, 0.7) 100%),
+    /* Layer 1 */ linear-gradient(90deg, rgba(43, 188, 255, 0.7) 0%, rgba(20, 190, 85, 0.7) 100%),
     /* Separa por comas */ /* Layer 2 */ url('../Asset/images/fono-steve.png') center center no-repeat;
   background-size: cover;
 }
 
-.about > div {
+.coleccionables> div {
   display: flex;
   padding: var(--space-large);
 }
 
-.about-image,
-.about-content {
+.coleccionables-image,
+.coleccionables-content {
   width: 50%;
 }
 
-.about-image {
+.coleccionables-image {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.about-image img {
+.coleccionables-image img {
   width: 100%;
   max-width: 240px;
   min-width: 200px;
 }
 
-.about-content {
+.coleccionables-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.about-content h2,
-.about-content p {
+.coleccionables-content h2,
+.coleccionables-content p {
   color: var(--light-color);
 }
