@@ -264,7 +264,7 @@ body {
 .about {
   background:
     /* Capas */
-    /* Layer 1 */ linear-gradient(90deg, rgba(19, 19, 47, 0.7) 0%, rgba(81, 22, 78, 0.7) 100%),
+    /* Layer 1 */ linear-gradient(90deg, rgba(24, 130, 179, 0.7) 0%, rgba(20, 190, 119, 0.7) 100%),
     /* Separa por comas */ /* Layer 2 */ url('../Asset/images/fono-steve.png' center center no-repeat;
   background-size: cover;
 }
