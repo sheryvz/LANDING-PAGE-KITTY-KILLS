@@ -1,76 +1,137 @@
-
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minecraft</title>
+    <link rel="icon" href="./Asset/images/favicon-minecraft.png" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Minecraft</title>
-  <link rel="icon" href="/Minecraft-Logo-9-1200x750.png" type="image/png"/>
-  <link rel="icon" href="/Minecraft-Logo-9-1200x750.png" type="image/png" />
-  <!-- stylesheet -->
-   <link rel="stylesheet" href="./CSS/global.css">
-   <link rel="stylesheet" href="./CSS/resset.css">
-   <link rel="stylesheet" href="./CSS/style.css">
-  <link rel="stylesheet" href="./css/global.css">
-  <link rel="stylesheet" href="./css/resset.css">
-  <link rel="stylesheet" href="./css/style.css">
+    <!-- Styles Sheets -->
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/resset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
 
-  <!-- Google Fonts -->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
 
-  <!-- Material Icons -->
-   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <!-- Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+  </head>
+  <body>
+    <!-- Header -->
 
-
-</head>
-
-<body>
-  <!-- Header -->
-  <header class="header">
-    <nav class="navbar">
-      <div class="navbar-logo">
-        </div>
-        <p class="hero-text">Descubre nuestros juegos</p>
-        <p class="hero-text">¡Explora tus propios mundos únicos, sobrevive a la noche y crea todo lo que puedas imaginar!</p>
-      </div>
-    </section>
-
-    <!-- Perspectives -->
-    <section class="perspective">
-      <div class="wrapper">
-
-        <div class="perspective-header">
-          <h2 class="title-text">Consigue los 3 juegos Minecraft con el Triple Bundle</h2>
-          <p>Lorem ipsum dolor sit amet consectetur.</p>
+    <header class="header">
+      <nav class="navbar">
+        <div class="navbar-logo">
+          <img src="./Asset/images/minecraft-symbol.svg" alt="Minecraft Symbol" />
         </div>
 
-        <div class="perspective-content">
+        <ul class="navbar-menu">
+          <li><a href="#games">Juegos</a></li>
+          <li><a href="#trailers">Tráilers</a></li>
+          <li><a href="#coleccionables">Coleccionables</a></li>
+          <li><a href="#noticias">Noticias</a></li>
+          <li><a href="#marketplace">Marketplace</a></li>
+        </ul>
 
-          <div class="perspective-thumbnails">
-            <ul class="thumbnails-list">
-              <li class="thumbnail-item"><img src="./ASSETS-FOLDER/images/MINECRAFT JAVA Y BEDROCK.jpg" alt="Foto 1 Minecraft"></li>
-              <li class="thumbnail-item"><img src="./ASSETS-FOLDER/images/MINECRAFT DUNGEONS.jpg" alt="Foto 2 Minecraft"></li>
-              <li class="thumbnail-item"><img src="./ASSETS-FOLDER/images/MINECRAFT LEGENDS.jpg" alt="Foto 3 Minecraft"></li>
-              <li class="thumbnail-item"><img src="./assets/images/thumb-4.png" alt="Foto 4 Minecraft"></li>
-              <li class="thumbnail-item"><img src="./assets/images/thumb-5.png" alt="Foto 5 Minecraft"></li>
-              <li class="thumbnail-item"><img src="./assets/images/thumb-6.png" alt="Foto 6 Minecraft"></li>
-            </ul>
+        <button class="button-primary">Buy Now <span class="material-symbols-outlined"> local_mall </span></button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero -->
+
+      <section class="hero">
+        <div class="hero-content">
+          <h1>
+            <img src="./Asset/images/logo-minecraft.png" alt="Minecraft" />
+          </h1>
+          <p>¡Explora tus propios mundos únicos, sobrevive a la noche y crea todo lo que puedas imaginar!</p>
+          <div class="hero-actions">
+            <button class="button-primary">Buy Now  <span class="material-symbols-outlined"> local_mall </span></button>
           </div>
 
-          <div class="perspective-showcase">
-            <img class="perspective-image" src="./images/minecraft bedrock.jpg" alt="Minecraft original">
-              <div class="perspective-info">
-               <h3 class="title-text">DLC de los Pitufos</h3>
-                <p class="hero-text">Puerto¡Únete a los Pitufos en una gran aventura! Pon a prueba tus habilidades en una serie de minijuegos, explora la aldea de los Pitufos y rescata los Pitufos capturados.</p>
+          <div class="hero-icons">
+            <img src="./Asset/images/minecraft.svg" alt="Logotipo Minecraft" />
+            <img src="./Asset/images/dungeons.svg" alt="Logotipo Dungeons" />
+            <img src="./Asset/images/legends.svg" alt="Logotipo Legends" />
+            <img src="./Asset/images/education.svg" alt="Logotipo Education" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Juegos -->
+      <section class="games" id="games">
+        <div class="wrapper">
+          <div class="games-header">
+            <h2 class="games-title">Descubre nuestros Juegos</h2>
+          </div>
+
+          <div class="games-content">
+            <div class="games-thumbnails">
+              <ul class="thumbnails-list">
+                <li class="thumbnail-item"><img src="./Asset/images/thumbnail-1.png" alt="Juegos  1 Thumbnail" /></li>
+                <li class="thumbnail-item"><img src="./Asset/images/thumbnail-2.png" alt="Juegos  2 Thumbnail" /></li>
+                <li class="thumbnail-item"><img src="./Asset/images/thumbnail-3.png" alt="Juegos  3 Thumbnail" /></li>
+                <li class="thumbnail-item"><img src="./Asset/images/thumbnail-4.png" alt="Juegos  4 Thumbnail" /></li>
+              </ul>
+            </div>
+            <div class="games-showcase">
+                <h3 class="games-text">Entra en un universo de bloques de creatividad, emociones y misterio con tres juegos de Minecraft en un paquete. Explora y da forma a mundos únicos e infinitos en Minecraft, el último juego sandbox donde puedes sobrevivir a la noche o crear una obra de arte, o ambas cosas, Forma un equipo con amigos o lucha de forma individual a través de niveles llenos de tesoros y de acción en Minecraft Dungeons Forja alianzas y libra batallas estratégicas para guardar el Overworld en Minecraft Legends. ¿Quieres aún más aventuras? Este paquete también incluye 1.020 Minecoins que puedes usar para comprar apasionante contenido creado por su creador para Minecraft: Bedrock Edition y Minecraft Legends..</h3>
+              <div class="games-info">
+                <p>Consigue los 3 juegos Minecraft con el Triple Bundle</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+      
+      <!-- Media -->
+       <section class="media">
+        <div class="wrapper">
+            <div class="media-header">
+                <h2>Tráileres de la experiencia del juego</h2>
+                <p>¡Ve las nuevas actualizaciónes!</p>
+            </div>
+            
+            <div class="carousel">
+                <div class="carousel-track">
+                    <article class="carousel-item">
+                        <img src="./Asset/images/media-1.png" alt="Thumbnail media 1"><span class="material-symbols-outlined">play_circle</span>
+                    </article>
+                    
+                    <article class="carousel-item">
+                         <img src="./Asset/images/media-2.png" alt="Thumbnail media 2"><span class="material-symbols-outlined">play_circle</span>
+                        </article>
+                        
+                    <article class="carousel-item">
+                        <img src="./Asset/images/media-3.png" alt="Thumbnail media 3"><span class="material-symbols-outlined">play_circle</span></article>
+                </div>
+                
+                <div class="carousel-controls">
+                    <button><span class="material-symbols-outlined">arrow_circle_left</span></button>
+                    <button><span class="material-symbols-outlined">arrow_circle_right</span></button>
+                </div>
+            </div>
+        </div>
     </section>
 
-  </main>
+    <!-- Coleccionables -->
+    <section class="coleccionables" id="coleccionables">
+        <div class="wrapper">
+            <div class="coleccionables-img">
+                <img src="./Asset/images/steve.png" alt="Steve">
+            </div>
+            
+            <div class="coleccionables-content">
+                <h2>Coleccionables</h2>
+                    <p>El mundo de Minecraft es vasto, ¿por qué no llevarlo más allá de sus fronteras de bloques? ¡Personaliza tu dispositivo con nuestros fondos de pantalla de Minecraft favoritos, banners de redes sociales y mucho más!</p>
+                </div>
+            </div>
+    </section>
 
-</body>
-
+    </main>
+  </body>
 </html>

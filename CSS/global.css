@@ -1,50 +1,41 @@
-
-
 /* 
-ESTILOS GLOBALES
-
-  Aqui vamos a definir estilos y variables que se reutilicen en todo el sitio.
+  Estilos Globales
+  
+  Aquí vamos a definir estilos y variables que se reutilicen en todo el sitio.
 
 */
 
-
-@font-face {
-  font-family: 'SFPRODISPLAYBOLD' ;
-  src: url(/assets/fonts/SFPRODISPLAYBOLD.OTF) format(opentype);
-}
-
-@font-face {
-  font-family: 'SFPRODISPLAYMEDIUM' ;
-  src: url(/assets/fonts/SFPRODISPLAYMEDIUM.OTF) format(opentype);
-}
-
-@font-face {
-  font-family: 'SFPRODISPLAYREGULAR' ;
-  src: url(/assets/fonts/SFPRODISPLAYREGULAR.OTF) format(opentype);
-}
-
-
 :root {
-  --light-color: #ffe81b ;
-  --white-color: #FAF7F4 ;
-  --dark-color: #3e005a ;
-  --blue-color: #007a88 ;
-  --buy-blue: #0d169c;
-  --purple-color: #8605b9 ;
-  --light-gray : #adadad;
-  --dark-gray : #333333;
-  --degradadoapple-color: linear-gradient(#8c00af70, #470396, #f7fa3d) ;
+    --green-color: #50A434;
+    --dark-color: #171615;
+    --white-color: #FFFFFF;
+    --botom-color: #0F0E0E;
+    --color-product: #262423;
 
-  --font-primary: 'SFPRODISLAYBOLD' ;
+    --font-primary: 'Jersey 10';
+    --font-secondary: 'Jersey 10';
 
-  --space-small: 16px ;
-  --space-normal:  24px ;
-  --space-medium: 32px ;
+    --green-color-transparent: #50a43497; 
+
+    --space-small: 16px;
+    --space-normal: 24px;
+    --space-medium: 32px;
+    --space-large: 48px;
+    --space-xl: 56px;
+    --space-2xl: 64px;
+  
+    /* Height for Scroll Offset */
+    --offset-height: 124px;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-  font-family: var(--font-primary);
-  background-color: var(--light-color);
+    font-family: var(--font-primary);
+    background-color: var(--light-color);
+    color: var(--dark-color);
 }
 
 h1,
@@ -53,68 +44,77 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-primary);
-  color: var(--dark-color);
+    font-family: var(--font-secondary);
+    color: var(--dark-color);
+    text-transform: uppercase;
 }
 
 h2 {
-  font-size: 48px;
-  margin-bottom: 1rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
 h3 {
-  font-size: 1.75rem;
-  margin-bottom: 0.8rem;
+    font-size: 1.75rem;
+    margin-bottom: 0.8rem;
 }
-
 
 /* Buttons */
 
+.button {
+    cursor: pointer;
+}
+
+section {
+    scroll-margin-top: var(--offset-height);
+    margin-bottom: var(--space-2xl);
+}
+
+section {
+    margin-bottom: var(--space-medium);
+}
+
 .button-primary {
-  display: flex;
-  align-items: center;
-  gap: var(--space-small);
-  padding: var(--space-small) var(--space-normal); 
-  background-color: var(--light-color);
-  color: var(--dark-color);
-  border-radius: 32px;
-  font-family: 'SFPRODISPLAYREGULAR';
-  text-transform: uppercase;
-  font-size: 1.125rem;
-
-
-  transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: var(--space-small);
+    padding: var(--space-small) var(--space-normal);
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    border-radius: 32px;
+    font-family: var(--font-secondary);
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    transition: background-color 0.3s ease;
 }
 
 .button-primary:hover {
-  color: var(--light-color);
-  background-color: var(--buy-blue);
+    color: var(--dark-color);
+    background-color: var(--green-color);
 }
 
 .button-secondary {
-  display: flex;
-  align-items: center;
-  gap: var(--space-small);
-  padding: var(--space-small) var(--space-normal); 
-  background-color: var(--buy-blue);
-  color: var(--light-color);
-  border-radius: 32px;
-  font-family: 'SFPRODISPLAYREGULAR';
-  text-transform: uppercase;
-  font-size: 1.125rem;
-
-
-  transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: var(--space-small);
+    padding: var(--space-small) var(--space-normal);
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    border-radius: 32px;
+    font-family: var(--font-secondary);
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    transition: background-color 0.3s ease;
 }
 
 .button-secondary:hover {
-  color: var(--light-color);
-  background-color: var(--purple-color);
+    color: var(--dark-color);
+    background-color: var(--green-color);
 }
 
 /* Wrapper */
 
 .wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
+    max-width: 1200px;
+    margin: 0 auto;
 }
